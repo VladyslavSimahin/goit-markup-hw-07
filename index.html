@@ -36,6 +36,65 @@
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="button-nav-mob" js-open-menu>
+          <svg class="buttom-nav-mob-svg" width="100" height="100">
+            <use href="./images/symbol-defs.svg#icon-menu-hamburger-1"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" js-menu-container>
+          <div class="container mobile-menu-container">
+            <button class="mobile-menu-close" js-close-menu>
+              <svg class="mobile-menu-close-svg">
+                <use href="./images/symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </button>
+            <ul class="navigation-menu-ul">
+              <li class="navigation-menu-mob">
+                <a href="./index.html">Studio</a>
+              </li>
+              <li class="navigation-menu-mob">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="navigation-menu-mob"><a href="">Contacts</a></li>
+            </ul>
+            <address class="mob-social">
+              <ul class="mob-social-ul">
+                <li class="mob-social-tel">
+                  <a href="tel:+110001111111" class="mob-tel"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-social-mail">
+                  <a href="mailto:info@devstudio.com" class="mob-mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mob-social-apps">
+              <a class="mob-media-apps" href="">
+                <svg class="instagram-icons media">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a class="mob-media-apps" href="">
+                <svg class="twitter-icons media">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a class="mob-media-apps" href="">
+                <svg class="facebook-icons media">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="mob-media-apps" href="">
+                <svg class="linkedin-icons media">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
         <address class="auth-nav">
           <ul class="lists">
             <li class="item">
@@ -55,10 +114,7 @@
       <!--Hero-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
-            Effective Solutions<br />
-            for Your Business
-          </h1>
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="button" data-modal-open>
             Order Service
           </button>
@@ -497,6 +553,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
