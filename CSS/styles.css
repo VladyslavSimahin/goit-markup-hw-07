@@ -805,6 +805,7 @@ img {
   text-align: left;
   padding-left: 16px;
 }
+
 .paragraph {
   font-family: inherit;
   color: var(--first-text-color);
@@ -826,6 +827,22 @@ img {
 .flex-container {
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 480px) {
+  .example-card > img {
+    width: 420px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .flex-container > img {
+    width: 356px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .flex-container > img {
+    width: 360px;
+    display: block;
+  }
 }
 .product-overlay {
   position: absolute;

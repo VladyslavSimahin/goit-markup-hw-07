@@ -36,14 +36,10 @@
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
-        <button type="button" class="button-nav-mob" js-open-menu>
-          <svg class="buttom-nav-mob-svg" width="100" height="100">
-            <use href="./images/symbol-defs.svg#icon-menu-hamburger-1"></use>
-          </svg>
-        </button>
-        <div class="mobile-menu" js-menu-container>
+        <button type="button" class="button-nav-mob" data-modal-open></button>
+        <div class="mobile-menu is-hidden" data-modal>
           <div class="container mobile-menu-container">
-            <button class="mobile-menu-close" js-close-menu>
+            <button class="mobile-menu-close" data-modal-close>
               <svg class="mobile-menu-close-svg">
                 <use href="./images/symbol-defs.svg#icon-vector"></use>
               </svg>
@@ -212,7 +208,16 @@
             <li class="item-tm">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/2.1.jpg" alt="men" width="264" />
+                  <img
+                    srcset="
+                      ./images/first-person.jpg    1x,
+                      ./images/first-person@2x.jpg 2x,
+                      ./images/first-person@3x.jpg 3x
+                    "
+                    src="./images/2.1.jpg"
+                    alt="men"
+                    width="264"
+                  />
                 </div>
                 <div class="card-content">
                   <h3 class="card-heading">Mark Guerrero</h3>
@@ -252,7 +257,16 @@
             <li class="item-tm">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/2.2.jpg" alt="men" width="264" />
+                  <img
+                    srcset="
+                      ./images/second-person.jpg    1x,
+                      ./images/second-person@2x.jpg 2x,
+                      ./images/second-person@3x.jpg 3x
+                    "
+                    src="./images/2.2.jpg"
+                    alt="men"
+                    width="264"
+                  />
                 </div>
                 <div class="card-content">
                   <h3 class="card-heading">Tom Ford</h3>
@@ -292,7 +306,16 @@
             <li class="item-tm">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/2.3.jpg" alt="women" width="264" />
+                  <img
+                    srcset="
+                      ./images/three-person.jpg    1x,
+                      ./images/three-person@2x.jpg 2x,
+                      ./images/three-person@3x.jpg 3x
+                    "
+                    src="./images/2.3.jpg"
+                    alt="women"
+                    width="264"
+                  />
                 </div>
                 <div class="card-content">
                   <h3 class="card-heading">Camila Garcia</h3>
@@ -331,7 +354,16 @@
             <li class="item-tm">
               <article class="card">
                 <div class="card-thumb">
-                  <img src="./images/2.4.jpg" alt="men" width="264" />
+                  <img
+                    srcset="
+                      ./images/four-person.jpg    1x,
+                      ./images/four-person@2x.jpg 2x,
+                      ./images/four-person@3x.jpg 3x
+                    "
+                    src="./images/2.4.jpg"
+                    alt="men"
+                    width="264"
+                  />
                 </div>
                 <div class="card-content">
                   <h3 class="card-heading">Daniel Wilson</h3>
