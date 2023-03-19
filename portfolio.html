@@ -20,7 +20,7 @@
   <body>
     <header class="global-nav midd">
       <div class="container header-logo">
-        <!--logo-->
+        <!-----------------------logo---------------------->
         <nav class="main-nav">
           <a href="./index.html" class="logo"
             ><span class="colortext">Web</span>Studio</a
@@ -33,6 +33,61 @@
             <li class="item"><a href="" class="link">Contacts</a></li>
           </ul>
         </nav>
+        <button type="button" class="button-nav-mob" data-modal-open></button>
+        <div class="mobile-menu is-hidden" data-modal>
+          <div class="container mobile-menu-container">
+            <button class="mobile-menu-close" data-modal-close>
+              <svg class="mobile-menu-close-svg">
+                <use href="./images/symbol-defs.svg#icon-vector"></use>
+              </svg>
+            </button>
+            <ul class="navigation-menu-ul">
+              <li class="navigation-menu-mob">
+                <a href="./index.html">Studio</a>
+              </li>
+              <li class="navigation-menu-mob">
+                <a href="./portfolio.html">Portfolio</a>
+              </li>
+              <li class="navigation-menu-mob"><a href="">Contacts</a></li>
+            </ul>
+            <address class="mob-social">
+              <ul class="mob-social-ul">
+                <li class="mob-social-tel">
+                  <a href="tel:+110001111111" class="mob-tel"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-social-mail">
+                  <a href="mailto:info@devstudio.com" class="mob-mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <div class="mob-social-apps">
+              <a class="mob-media-apps" href="">
+                <svg class="instagram-icons media">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              <a class="mob-media-apps" href="">
+                <svg class="twitter-icons media">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+              <a class="mob-media-apps" href="">
+                <svg class="facebook-icons media">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="mob-media-apps" href="">
+                <svg class="linkedin-icons media">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
         <address class="auth-nav">
           <ul class="lists">
             <li class="item">
@@ -75,7 +130,7 @@
           <ul class="example">
             <li class="example-card">
               <div class="flex-container">
-                <a href=""
+                <a class="flex-conteiner-img" href=""
                   ><img
                     srcset="
                       ./images/first.jpg    1x,
@@ -84,6 +139,7 @@
                     "
                     src="./images/photo.jpg"
                     alt="bank app"
+                    width="360px"
                 /></a>
 
                 <div class="product-overlay">
@@ -105,7 +161,7 @@
 
             <li class="example-card">
               <div class="flex-container">
-                <a href=""
+                <a class="flex-conteiner-img" href=""
                   ><img
                     srcset="
                       ./images/second.jpg    1x,
@@ -133,7 +189,7 @@
 
             <li class="example-card">
               <div class="flex-container">
-                <a href="">
+                <a class="flex-conteiner-img" href="">
                   <img
                     srcset="
                       ./images/three.jpg    1x,
@@ -142,6 +198,7 @@
                     "
                     src="./images/photob.jpg"
                     alt="computer and smartfon"
+                    width="360px"
                 /></a>
                 <div class="product-overlay">
                   <p class="overlay-text">
@@ -160,7 +217,7 @@
             </li>
             <li class="example-card">
               <div class="flex-container">
-                <a href="">
+                <a class="flex-conteiner-img" href="">
                   <img
                     srcset="
                       ./images/four.jpg    1x,
@@ -169,6 +226,7 @@
                     "
                     src="./images/photoc.jpg"
                     alt="the man behind the wheel"
+                    width="360px"
                 /></a>
                 <div class="product-overlay">
                   <p class="overlay-text">
@@ -187,7 +245,7 @@
             </li>
             <li class="example-card">
               <div class="flex-container">
-                <a href="">
+                <a class="flex-conteiner-img" href="">
                   <img
                     srcset="
                       ./images/five.jpg    1x,
@@ -196,6 +254,7 @@
                     "
                     src="./images/photod.jpg"
                     alt="screensaver for the phone"
+                    width="360px"
                 /></a>
                 <div class="product-overlay">
                   <p class="overlay-text">
@@ -214,7 +273,7 @@
             </li>
             <li class="example-card">
               <div class="flex-container">
-                <a href="">
+                <a class="flex-conteiner-img" href="">
                   <img
                     srcset="
                       ./images/six.jpg    1x,
@@ -241,7 +300,7 @@
             </li>
             <li class="example-card">
               <div class="flex-container">
-                <a href="">
+                <a class="flex-conteiner-img" href="">
                   <img
                     srcset="
                       ./images/seven.jpg    1x,
@@ -250,6 +309,7 @@
                     "
                     src="./images/photof.jpg"
                     alt="design layouts"
+                    width="360px"
                 /></a>
                 <div class="product-overlay">
                   <p class="overlay-text">
@@ -269,7 +329,7 @@
 
             <li class="example-card">
               <div class="flex-container">
-                <a href="">
+                <a class="flex-conteiner-img" href="">
                   <img
                     srcset="
                       ./images/eight.jpg    1x,
@@ -278,6 +338,7 @@
                     "
                     src="./images/photoag.jpg"
                     alt="a person walks with a bag of food"
+                    width="360px"
                 /></a>
                 <div class="product-overlay">
                   <p class="overlay-text">
@@ -296,7 +357,7 @@
             </li>
             <li class="example-card">
               <div class="flex-container">
-                <a href="">
+                <a class="flex-conteiner-img" href="">
                   <img
                     srcset="
                       ./images/nine.jpg    1x,
@@ -305,6 +366,7 @@
                     "
                     src="./images/photol.jpg"
                     alt="making coffee"
+                    width="360px"
                 /></a>
                 <div class="product-overlay">
                   <p class="overlay-text">

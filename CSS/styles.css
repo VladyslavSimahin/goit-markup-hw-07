@@ -779,6 +779,11 @@ img {
   flex-wrap: wrap;
   padding-left: 0;
 }
+@media screen and (min-width: 480px) {
+  .example {
+    width: 420px;
+  }
+}
 .example-titles {
   font-family: inherit;
   font-weight: 500;
@@ -829,8 +834,8 @@ img {
   overflow: hidden;
 }
 @media screen and (min-width: 480px) {
-  .example-card > img {
-    width: 420px;
+  .flex-container img {
+    width: 356px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -840,7 +845,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .flex-container > img {
-    width: 360px;
     display: block;
   }
 }
