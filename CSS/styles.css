@@ -439,7 +439,7 @@ ul {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("/images/Dark-bg@2x.webp");
+      url(../images/Dark-bg@2x.webp);
   }
 }
 .hero-title {
