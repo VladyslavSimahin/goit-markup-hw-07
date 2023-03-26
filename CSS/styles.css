@@ -430,6 +430,18 @@ ul {
   padding-top: 192px;
   padding-bottom: 192px;
 }
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("/images/Dark-bg@2x.webp");
+  }
+}
 .hero-title {
   font-family: "Roboto";
   font-style: normal;
