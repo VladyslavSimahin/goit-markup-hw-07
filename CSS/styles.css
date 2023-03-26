@@ -454,6 +454,7 @@ ul {
     display: table;
     margin-left: auto;
     margin-right: auto;
+    font-size: 36px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -520,12 +521,7 @@ ul {
 
 .listz {
   padding-left: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .listz .item:not(:last-child) {
-    margin-right: 24px;
-  }
+  padding-right: 0;
 }
 
 .info-title {
@@ -535,18 +531,25 @@ ul {
   font-size: 20px;
   line-height: 1.2;
 }
+@media screen and (max-width: 1199px) {
+  .info-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+}
 @media screen and (max-width: 767px) {
   .info-title {
     text-align: center;
   }
 }
 @media screen and (max-width: 767px) {
-  .item {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
   .item:not(:last-child) {
     margin-bottom: 76px;
+  }
+  .item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 379px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -554,11 +557,14 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .item:nth-child(-n + 2) {
     margin-bottom: 72px;
+  }
+  .listz .item {
+    width: 333px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -567,9 +573,14 @@ ul {
     padding-left: 0;
     padding-right: 0;
     column-gap: 0;
+    justify-content: center;
   }
-  .listz:not(:last-child) {
+  .listz .item:not(:last-child) {
     margin-right: 24px;
+  }
+  .listz .item {
+    width: 264px;
+    margin-bottom: 0;
   }
 }
 .title-text {
@@ -577,11 +588,6 @@ ul {
   font-size: 16px;
   font-family: inherit;
   color: var(--first-text-color);
-}
-@media screen and (min-width: 1200px) {
-  .listz .item {
-    margin-bottom: 0;
-  }
 }
 
 /*-------------------------------------- MEDIA INFO  ------------------------------------*/
@@ -613,6 +619,7 @@ ul {
   list-style-type: none;
   text-decoration: none;
   padding-left: 0;
+  justify-content: center;
 }
 .titles-ph li:not(:last-child) {
   margin-right: 24px;
@@ -823,10 +830,11 @@ ul {
 @media screen and (min-width: 768px) {
   .customer-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /*column-gap: 24px;*/
-    margin-left: 16px;
-    margin-right: 16px;
+    grid-template-columns: 168px 168px 168px;
+    column-gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
   }
   .customer-items:nth-child(-n + 3) {
     margin-bottom: 72px;
