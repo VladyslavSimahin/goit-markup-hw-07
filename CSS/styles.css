@@ -462,12 +462,13 @@ ul {
 }
 @media screen and (max-width: 767px) {
   .hero-title {
-    width: 320px;
+    max-width: 320px;
     height: 80px;
     display: table;
     margin-left: auto;
     margin-right: auto;
     font-size: 36px;
+    line-height: 1.1;
   }
 }
 @media screen and (min-width: 768px) {
@@ -562,7 +563,7 @@ ul {
   .item {
     margin-left: auto;
     margin-right: auto;
-    width: 379px;
+    max-width: 379px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1143,6 +1144,9 @@ ul {
   .form-footer-block {
     margin-left: 108px;
   }
+  .form-footer-button {
+    margin-left: 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form-footer-block {
@@ -1228,21 +1232,18 @@ ul {
   .modal {
     width: 392px;
     height: 586px;
-    margin-top: 50px;
   }
 }
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
     height: 586px;
-    margin-top: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
   .modal {
     width: 408px;
     height: 584px;
-    margin-top: 0;
   }
 }
 
@@ -1537,6 +1538,7 @@ ul {
 
 .comment {
   border-radius: 4px;
+  border-color: rgba(46, 47, 66, 0.4);
   resize: none;
   width: 100%;
   height: 120px;
@@ -1586,14 +1588,15 @@ ul {
   display: flex;
   align-items: center;
 }
+.label-text-privacy {
+  color: #4d5ae5;
+}
 
 .form-icon {
   position: absolute;
   top: 50%;
   left: 19px;
   transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pos-form-icon {
