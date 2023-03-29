@@ -507,6 +507,18 @@ ul {
     padding-bottom: 192px;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.2;
+    max-width: 496px;
+    height: 120px;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .hero-title {
   font-family: "Roboto";
@@ -527,19 +539,6 @@ ul {
   margin-right: auto;
   font-size: 36px;
   line-height: 1.1;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-title {
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.2;
-    max-width: 496px;
-    height: 120px;
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 .hero .button {
