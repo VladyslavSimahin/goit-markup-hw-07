@@ -511,8 +511,6 @@ ul {
 .hero-title {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
@@ -521,7 +519,7 @@ ul {
 
   color: #ffffff;
   font-weight: 600;
-  font-size: 56px;
+  font-size: 36px;
   max-width: 320px;
   height: 80px;
   display: table;
@@ -533,8 +531,10 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero-title {
+    font-weight: 700;
+    font-size: 56px;
     line-height: 1.2;
-    width: 496px;
+    max-width: 496px;
     height: 120px;
     display: table;
     margin-left: auto;
@@ -1204,6 +1204,11 @@ ul {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+}
+
+.form-footer-button:hover,
+.form-footer-button:focus {
+  background-color: #404bbf;
 }
 
 .form-footer-button::before {
